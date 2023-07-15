@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family:'Montserrat', sans-serif;
+}
+.ak-container-1-basicInformation{
+   padding: 30px !important;
+   background-color: rgba(251, 251, 251, 0.81);
+}
+.ak-container-1-basicInformation:nth-of-type(2){
+    background-color: rgb(246, 247, 248);
+}
+.basicInformation-Name h5{
+    font-size: 1.5rem;
+    padding-left: 9px;
+    font-weight: 700;
+ }
+ .Like-icon{
+    font-size: 1.8em;
+ }
+ .basicInformation-Name h6{
+    font-size: 0.8rem;
+ }
+
+
+.ak-rating-number{
+    background-color: rgb(60, 58, 56) !important;
+    padding: 2px 17px 0px 17px !important;
+    color: rgb(255, 187, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 2px !important;
+}
+.ak-rating-stars{
+    padding-left: 10px;
+}
+.ak-rating-stars span{
+    font-size: 1.6rem !important;
+}
+.ak-rating-stars span:nth-of-type(1),
+.ak-rating-stars span:nth-of-type(2),
+.ak-rating-stars span:nth-of-type(3),
+.ak-rating-stars span:nth-of-type(4){
+    color: rgb(255, 187, 0);
+}
+.ak-rating-number-2{
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+
+.ak-address-section-text{
+    font-size: 0.8rem;
+}
+.ak-address-section-dot span{
+    font-size: 0.8rem !important;
+    margin: 0px 5px;
+}
+
+.ak-trending-section-text{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.ak-trending-section-text span{
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.ak-contact-number{
+    background-color: rgb(60, 58, 56);
+    padding: 10px 10px 0px 10px;
+
+    color: rgb(255, 187, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 2px !important;
+}
+.basicInformation-contact h5{
+    font-size: 1em;
+}
+.basicInformation-contact span{
+    padding-right: 6px;
+    font-size: 1em;
+}
+.ak-contact-number-chat{
+    display: flex;
+    padding: 10px;
+}
+.ak-contact-number-chat iconify-icon{
+    font-size: 1.5em;
+    padding: 0px !important;
+}
+.ak-contact-number-chat h6{
+    font-size: 1em;
+    font-weight: 600;
+    justify-content: end;
+    padding-top: 3px !important;
+    padding-left: 3px;
+}
+.ak-f-whatsapp{
+    color: rgb(7, 209, 78);
+}
+.ak-f-Add{
+    color: rgb(255, 115, 0);
+}
+.ak-f-Share{
+   color: rgba(67, 70, 70, 0.963); 
+}
+
+
+.ak-deal{
+    margin-top: 10px;
+    background-color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-weight: 500;
+}
+.ak-deal:hover{
+    background-color: rgb(67, 57, 31);
+    transition: 0.4s;
+    color: rgb(255, 255, 254);
+}
+
+
+
+
+
+
+
+
+.ak-container-2-basicInformation{
+    margin-top: 30px;
+    padding: 30px !important;
+    padding-top: 5px !important;
+}
+.ak-section-1-col-1{
+    background-color: rgba(242, 245, 245, 0.81);
+    padding-top: 30px;
+}
+.akpayment h6{  
+    font-size: 0.8rem;
+}
+.ak-container-2-basicInformation h5{
+    font-weight: 700;
+}
+.ak-card-details{
+    font-weight: 600;
+}
+.information-header{
+    padding-bottom: 14px !important;
+}
+.ak-distributor{
+    font-size: 1.3rem;
+    padding-right: 10px;
+    color: #fcc603;
+}
+.section-2-row,
+.section-3-row{
+    padding-top: 50px;
+}
+
+
+
+
+#myCarousel {
+    margin-top: 50px;
+    background-color: transparent;
+}
+.card-body{
+    padding: 0px;
+    margin: 5px;
+}
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+.carousel-control-next-icon{
+    color: #080808;
+}
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon{
+        background-color: #f1aa04;
+    }
+}
+
+.ak-upload{
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.ak-upload-btn{
+    padding: 10px;
+    padding-left: 40px;
+    background-color: #fcbe03;
+    border: none;
+    border-radius: 5px;
+}
+.ak-upload-btn:hover{
+    background-color: rgb(27, 26, 25);
+    transition: 0.4s;
+    color: rgb(253, 195, 4);
+}
+.ak-upload-btn-icon{
+    font-size: 1.4rem;
+}
+.ak-upload-btn span{
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+
+.ak-QA-section-btn{
+    padding-top: 30px !important;
+}
+.ak-QA-section-btn button{
+    padding: 10px;
+    background-color: #fcbe03;
+    border: none;
+    border-radius: 5px;
+}
+.ak-QA-section-btn button:hover{
+    background-color: rgb(27, 26, 25);
+    transition: 0.4s;
+    color: rgb(253, 195, 4);
+}
+.box{
+    padding: 20px 0px 60px 0px;
+    
+}
+
+.query-button {
+    padding: 10PX 15px;
+    background-color: transparent;
+    border: 2px solid #f4b803 !important;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1c1a1a;
+    font-weight: 500;
+}
+.query-button:hover{
+    background-color: rgb(27, 26, 25);
+    transition: 0.4s;
+    color: rgb(253, 195, 4);
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+    z-index: 1111111;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.wrapper {
+	margin: 70px auto;
+	padding: 20px;
+	background: #e7e7e7;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.wrapper h2 {
+	margin-top: 0;
+	color: #333;
+}
+.wrapper .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.wrapper .close:hover {
+	color: #06D85F;
+}
+.wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+}
+/*form*/
+
+.container {
+	border-radius: 5px;
+	background-color: #e7e7e7;
+	padding: 20px 0;
+}
+.ak-QA-form form label {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+.ak-QA-form input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+.ak-QA-form input[type="submit"] {
+	background-color: #f59b01;
+	color: #fff;
+	padding: 15px 50px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+
+
+
+.ak-review-number{
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    color:#fcbe03;
+    border-radius: 20px;
+    padding: 30% !important;
+    font-weight: 600;
+}
+.ak-review-section h6{
+    font-weight: 700;
+}
+.ak-review-section span{
+    font-size: 0.8rem;
+}
+.stars {
+    display:inline-block;
+    width:auto;
+    position:relative;
+    font-size:50px;
+    border-radius:5px;
+    margin:5px;
+}
+/*
+the BEFORE:pseudo element. This will represent the number of stars in the actual rating.
+it floats above the AFTER element.
+*/
+.stars:BEFORE {
+    content:"★★★★★";
+    position:absolute;
+    overflow:hidden;
+    z-index:1;
+    left:0px;
+    top:0px;
+/* everything below here is optional. */
+    color:#FC0;
+}
+/*
+the AFTER:pseudo element. This will represent the total possible  stars available. It is set to relative to ensure it takes up the proper amount of space.
+*/
+.stars:AFTER {
+    content:"★★★★★";
+    position:relative;
+    color:#ccced2;
+}
+/*
+if including user rating controls, float the AFTER element.
+*/
+.stars.rate:AFTER {
+    position:absolute;
+    left:0px;
+}
+/*
+default state for the  user rating controls. invisible, but floating above the BEFORE and AFTER elements
+*/
+.stars.rate > A {
+    color:transparent;
+    text-decoration:none;
+    position:relative;
+    z-index:2;
+}
+/*
+if the user is floating thier mouse above the rating, hide the display stars.
+*/
+.stars.rate:HOVER:BEFORE,
+.stars.rate:HOVER:AFTER {
+    display:none;
+}
+/*
+turn all sthe start "ON" by default.
+*/
+.stars.rate:HOVER > A {
+    color:#FC0;
+}
+/*
+optional style for the specific star control a user is directly above.
+*/
+.stars.rate:HOVER > A:HOVER {
+    color:rgb(255, 170, 0);
+    top:-1px;
+}
+/*
+turn "OFF" all stars after the one the user is hovering over.
+*/
+.stars.rate >A:HOVER ~ A {
+    color:#1c1a1a;
+    text-shadow:none;
+}
+/* 
+all the styles below are used to display the apropriate portion of the BEFORE element based on percentage rating. unfortunately you will need to create a specific rule for each level of granularity you wish to display.
+
+
+if the CSS3 attr() function proposal ever gets implimented
+the remaining rules could all be replaced with the following:
+.stars[data-percent]:BEFORE {
+width:attr(data-percent,%,0);
+}
+
+*/
+.stars:NOT([data-percent]):BEFORE,
+.stars[data-percent="0"]:BEFORE {
+    display:none;
+}
+/* 1/2 a star */
+.stars[data-percent="10"]:BEFORE {
+    width:10%;
+}
+/* 1 star */
+.stars[data-percent="20"]:BEFORE {
+    width:20%;
+}
+/* 1 & 1/2 stars */
+.stars[data-percent="30"]:BEFORE {
+    width:30%;
+}
+/* etc. */
+
+
+
+.ak-ratings-internal span{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.ak-ratings-internal-content{
+    background-color: #ecedef;
+    padding: 4px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.ak-ratings-internal-content-icon{
+    color: rgb(255, 166, 0);
+} 
+
+
+
+
+
+.ak-user-review-left h6{
+    font-weight: 700;
+}
+.ak-user-review-left-img{
+  display: inline-block;
+  margin-left: 10px;
+  height: auto;
+  width: 13%;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+ .ak-user-review-left-img img{
+    width: 100%;
+    height: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+.review-date{
+    justify-content: right;
+    text-align: right;
+    font-weight: 600;
+}
+.review-stars{
+    font-size: 1.5rem;
+    color: #f57f01;
+}
+.review-body p{
+    font-size: 0.85rem;
+}
+.hr-review{
+    width: 100%;
+    border-top: 2px solid #c3c0c0;
+}
+
+
+
+
+
+.ak-directions-icon{
+    font-size: 1.5rem;
+    padding-right: 3px;
+}
+.ak-adress-hover:hover{
+    cursor: pointer;
+    background-color: #fdc407fe;
+    transition: 0.3s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.ak-col2-adress-icons-column,
+.ak-col2-adress-icons-column h6{
+    font-size: 1.12rem;
+}
+.ak-col2-adress-icons-column h6{
+    padding-left: 5px;
+}
+.ak-col2-adress-icons-column-mail{
+    text-decoration: none !important;
+    color:#1c1a1a;
+}
+.ak-col2-adress-icons-column-mail:hover{
+    color: inherit;
+}
+.ak-col2-adress-icons-column{
+    padding: 10px 5px 0px 5px !important;
+}
+.ak-col2-adress-icons-column-mail-icon{
+    color: #f57f01;
+}
+
+
+
+
+
+.ak-listing-section{
+    border: 2px solid #e9edea;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+.ak-listing-item{
+    flex-direction: column;
+    padding-top: 17px;
+}
+.ak-listing-item-btn{
+    padding: 10px 0px 5px 0px;
+}
+.listing-btn{
+    background-color: #f4ac03;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 10px 20px;
+    width: auto;
+    border: none;
+    border-radius: 50px;
+}
+.listing-btn:hover{
+    background-color: #080808;
+    color: #f4b803;
+    transition: 0.2s;
+}
+.ak-more{
+    text-align: center;
+    padding-top: 30px;
+}
+.ak-more-btn{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #f49803;
+}
+.ak-more:hover{
+    transform: scale(0.95);
+    transition: 0.2s;
+
+}
+
+
+
+
+@media only screen and (max-width: 480px){
+    .ak-review-number{
+        padding: 2% !important;
+        margin-bottom: 20px;
+    }
+    .ak-ratings-internal-content:nth-of-type(3),
+    .ak-ratings-internal-content:nth-of-type(4),
+    .ak-ratings-internal-content:nth-of-type(5),
+    .ak-ratings-internal-content:nth-of-type(6),
+    .ak-ratings-internal-content:nth-of-type(7){
+        display: none;
+    }
+    .wrapper {
+        margin: 10px auto;
+        padding: 10px;
+        background: #e7e7e7;
+        border-radius: 5px;
+        width: 100%;
+        position: relative;
+        transition: all 5s ease-in-out;
+    }
+    .basicInformation-contact{
+        flex-direction: column;
+        align-items: start !important;
+        text-align: left;
+    }
+    
+}
+
+@media only screen and (max-width: 380px){
+    .basicInformation-rating{
+        flex-direction: column;
+    }
+}
