@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Individual Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -158,77 +162,31 @@
                                     <div class="col ak-section-3-col-1">
                                         <h5>Photos</h5>
                                     </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
-                                                <div class="carousel-inner w-100">
-                                                    <div class="carousel-item active">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="https://www.kitchenarena.in/wp-content/uploads/2023/06/Faber-Kitchen-Chimney-light.webp">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="https://image1.jdomni.in/product/22072021/88/54/07/11A985C8509FFB98CD48C5610D_1626936673033.jpg">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="data:image/jpeg;base64,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">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVP0A7BYYZGcdDMx-Y_YNhTdT7xwAN_mlUw&usqp=CAU">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYYDoZsd9Vx7nh155kOZh64EInXSYV10cHlRZOAeGLuQByCbbtUGA6iSgpAXp49wo5tE&usqp=CAU">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlwoIx045UEs_TT6b3qrSR8blVhBOxha3HDQ&usqp=CAU">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="https://photos-us.bazaarvoice.com/photo/2/cGhvdG86YmVzdGJ1eQ/7ac081c0-0e53-56f9-805b-92fc34cc896d">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="col-md-3">
-                                                            <div class="card card-body">
-                                                                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcE2BKzlPN4nMA0VDMf1cfNNUobibNRplR86PRF6xwmLKsEJOg3iyFt0rbTI8Z5WaOsEE&usqp=CAU">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
+                                    <div class="col-12 ak-SIP-brand-section ">
+                                        <div class="wrapper">
+                                            <i id="left" class="fa-solid fa-angle-left"></i>
+                                            <ul class="carousel">
+                                              <li class="card">
+                                                <div class="img"><img src="data:image/png;base64,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" alt="img" draggable="false"></div>
+                                              </li>
+                                              <li class="card">
+                                                <div class="img"><img src="https://www.inventiva.co.in/wp-content/uploads/2022/03/Bosch-logo.jpg" alt="img" draggable="false"></div>
+                                              </li>
+                                              <li class="card">
+                                                <div class="img"><img src="https://kaffindiahome.files.wordpress.com/2019/04/7hooorjw.jpg" alt="img" draggable="false"></div>
+                                              </li>
+                                              <li class="card">
+                                                <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzzb0SkXMhiNBNFpyKSFAEZq4VarqiNybiJw&usqp=CAU" alt="img" draggable="false"></div>
+                                              </li>
+                                              <li class="card">
+                                                <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkUKu80lsKQmrod20to1WDs6uH9OK_9ceGQ&usqp=CAU" alt="img" draggable="false"></div>
+                                              </li>
+                                              <li class="card">
+                                                <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-jnFMxkFjMdD54cOJA7q8aBbir-2rin0ZQ&usqp=CAU" alt="img" draggable="false"></div>
+                                              </li>
+                                            </ul>
+                                            <i id="right" class="fa-solid fa-angle-right"></i>
+                                          </div>
                                     </div>
                                 </div>
                     
@@ -286,7 +244,182 @@
                         <input type="radio" id="Offers" name="mytabs">
                         <label for="Offers">Offers</label>
                         <div class="tab">
-                            
+                            <div class="row">
+                                <div class="col-lg-12 ak-SIP-offer-section">
+                                    <div class="ak-SIP-offer-section-strong">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <span>Exclusive Offers on Premium Deals</span>
+                                            </div>
+                                            <div class="col-lg-6 ak-SIP-offer-section-btn">
+                                                <a href=""><span>View Offers</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-lg-6 ak-SIP-offer-section-2">
+                                        <div class="ak-SIP-offer-section-strong-2">
+                                            <div class="row">
+                                                <div class="col-lg-6 ak-SIP-brand-section-text">
+                                                    <span>Exclusive Offers on Premium Deals</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-offer-section-btn">
+                                                    <a href=""><span>View Offers</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <h6>Non-refundable</h6>
+                                            </div>
+
+                                            <div class="row ak-SIP-brand-section-coupon-details">
+                                                <div class="col-lg-6">
+                                                    <span>Valid on all days</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-brand-section-coupon-details-2">
+                                                    <span>Save 10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ak-SIP-offer-section-2">
+                                        <div class="ak-SIP-offer-section-strong-2">
+                                            <div class="row">
+                                                <div class="col-lg-6 ak-SIP-brand-section-text">
+                                                    <span>Exclusive Offers on Premium Deals</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-offer-section-btn">
+                                                    <a href=""><span>View Offers</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <h6>Non-refundable</h6>
+                                            </div>
+
+                                            <div class="row ak-SIP-brand-section-coupon-details">
+                                                <div class="col-lg-6">
+                                                    <span>Valid on all days</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-brand-section-coupon-details-2">
+                                                    <span>Save 10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 ak-SIP-offer-section-2">
+                                        <div class="ak-SIP-offer-section-strong-2">
+                                            <div class="row">
+                                                <div class="col-lg-6 ak-SIP-brand-section-text">
+                                                    <span>Exclusive Offers on Premium Deals</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-offer-section-btn">
+                                                    <a href=""><span>View Offers</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <h6>Non-refundable</h6>
+                                            </div>
+
+                                            <div class="row ak-SIP-brand-section-coupon-details">
+                                                <div class="col-lg-6">
+                                                    <span>Valid on all days</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-brand-section-coupon-details-2">
+                                                    <span>Save 10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ak-SIP-offer-section-2">
+                                        <div class="ak-SIP-offer-section-strong-2">
+                                            <div class="row">
+                                                <div class="col-lg-6 ak-SIP-brand-section-text">
+                                                    <span>Exclusive Offers on Premium Deals</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-offer-section-btn">
+                                                    <a href=""><span>View Offers</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <h6>Non-refundable</h6>
+                                            </div>
+
+                                            <div class="row ak-SIP-brand-section-coupon-details">
+                                                <div class="col-lg-6">
+                                                    <span>Valid on all days</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-brand-section-coupon-details-2">
+                                                    <span>Save 10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <di class="row">
+                                    <div class="col-lg-6 ak-SIP-offer-section-2">
+                                        <div class="ak-SIP-offer-section-strong-2">
+                                            <div class="row">
+                                                <div class="col-lg-6 ak-SIP-brand-section-text">
+                                                    <span>Exclusive Offers on Premium Deals</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-offer-section-btn">
+                                                    <a href=""><span>View Offers</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <h6>Non-refundable</h6>
+                                            </div>
+
+                                            <div class="row ak-SIP-brand-section-coupon-details">
+                                                <div class="col-lg-6">
+                                                    <span>Valid on all days</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-brand-section-coupon-details-2">
+                                                    <span>Save 10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ak-SIP-offer-section-2">
+                                        <div class="ak-SIP-offer-section-strong-2">
+                                            <div class="row">
+                                                <div class="col-lg-6 ak-SIP-brand-section-text">
+                                                    <span>Exclusive Offers on Premium Deals</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-offer-section-btn">
+                                                    <a href=""><span>View Offers</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <h6>Non-refundable</h6>
+                                            </div>
+
+                                            <div class="row ak-SIP-brand-section-coupon-details">
+                                                <div class="col-lg-6">
+                                                    <span>Valid on all days</span>
+                                                </div>
+                                                <div class="col-lg-6 ak-SIP-brand-section-coupon-details-2">
+                                                    <span>Save 10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </di>
+                            </div>
                         </div>
 
 
@@ -581,44 +714,7 @@
                         <input type="radio" id="tabphotos" name="mytabs">
                         <label for="tabphotos">Photos</label>
                         <div class="tab">
-                            <div class="container-fluid">
-                                <div class="row img-row-ak"> 
-                                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                    <img src="https://www.w3schools.com/w3images/wedding.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/rocks.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/falls2.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/paris.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/nature.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/mist.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/paris.jpg"  class="img-fluid">
-                                  </div>
-                                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                    <img src="https://www.w3schools.com/w3images/underwater.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/ocean.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/wedding.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/mountainskies.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/rocks.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/underwater.jpg"  class="img-fluid">
-                                  </div>  
-                                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                    <img src="https://www.w3schools.com/w3images/wedding.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/rocks.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/falls2.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/paris.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/nature.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/mist.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/paris.jpg"  class="img-fluid">
-                                  </div>
-                                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                    <img src="https://www.w3schools.com/w3images/underwater.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/ocean.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/wedding.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/mountainskies.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/rocks.jpg"  class="img-fluid">
-                                    <img src="https://www.w3schools.com/w3images/underwater.jpg"  class="img-fluid">
-                                  </div>
-                                </div>
-                                </div>
+                            
                         </div>
                     
                       </div>
