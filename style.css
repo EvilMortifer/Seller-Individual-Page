@@ -209,62 +209,107 @@ body{
 
 
 
-#myCarousel {
-    margin-top: 50px;
-    background-color: transparent;
-}
-.card-body{
-    padding: 0px;
-    margin: 5px;
-}
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item>div {
-        display: none;
-    }
-
-    .carousel-inner .carousel-item>div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-start,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+.ak-SIP-brand-section .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
     display: flex;
-}
-.carousel-control-next-icon{
-    color: #080808;
-}
-@media (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 242px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    height: 100%;
+    width: 100%;
+  }
+  .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+  }
+  .card:hover{
+    transform: scale(0.9);
+    transition: 0.3s;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
 
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-item-next:not(.carousel-item-start) {
-        transform: translateX(25%) !important;
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-item-prev:not(.carousel-item-end),
-    .active.carousel-item-start,
-    .carousel-item-prev:not(.carousel-item-end) {
-        transform: translateX(-25%) !important;
-    }
-
-    .carousel-item-next.carousel-item-start,
-    .active.carousel-item-end {
-        transform: translateX(0) !important;
-    }
-
-    .carousel-inner .carousel-item-prev,
-    .carousel-item-prev:not(.carousel-item-end) {
-        transform: translateX(-25%) !important;
-    }
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon{
-        background-color: #f1aa04;
-    }
-}
 
 .ak-upload{
     padding-top: 10px;
@@ -405,6 +450,76 @@ body{
 	letter-spacing: 3px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ak-SIP-offer-section{
+    padding: 10px;
+}
+.ak-SIP-offer-section-strong{
+    background-color: transparent;
+    border: 2px solid #f49803;
+    border-radius: 5px;
+    padding: 40px 30px;
+}
+.ak-SIP-offer-section-btn{
+    text-align: right;
+}
+.ak-SIP-offer-section-btn a{
+    font-size: 0.8rem ;
+    color: #ffb300;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid #f57f01;
+    box-shadow:
+    inset 0 -3em 3em rgba(255, 196, 0, 0.178),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(253, 165, 3, 0.904);
+}
+.ak-SIP-offer-section-btn a:HOVER{
+    background-color: #080808;
+    color: #f4ac03;
+    transition: 0.4s;
+}
+
+.ak-SIP-offer-section-2{
+    padding: 10px;
+}
+.ak-SIP-offer-section-strong-2{
+    background-color: transparent;
+    border: 2px solid #f49803;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.ak-SIP-brand-section-text span{
+    font-size: 0.9rem;
+    font-weight: BOLD;
+}
+.ak-SIP-offer-section-strong-2 H6{
+    font-size: 0.75rem;
+}
+.ak-SIP-brand-section-coupon-details span{
+    font-size: 0.75rem;
+}
+.ak-SIP-brand-section-coupon-details-2{
+    text-align: right !important;
+    font-weight: bold !important;
+    color: #f57f01;
+}
 
 
 
