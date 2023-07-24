@@ -83,16 +83,8 @@
                         <h5>9876543210</h5>
                     </div>
                         <div class="ak-contact-number-chat">
-                            <iconify-icon icon="fa-brands:whatsapp-square" class="ak-f-whatsapp"></iconify-icon>
-                            <h6>Chat</h6> 
-                        </div>
-                        <div class="ak-contact-number-chat">
-                            <iconify-icon icon="material-symbols:add-photo-alternate-sharp" class="ak-f-Add"></iconify-icon>
-                            <h6>Add a Photo</h6>
-                        </div>
-                        <div class="ak-contact-number-chat">
                             <iconify-icon icon="fluent:share-28-filled" class="ak-f-Share"></iconify-icon>
-                            <h6>Share</h6>
+                            <a href=""><h6>Share</h6></a>
                         </div>
                 </div>   
             </div>
@@ -160,9 +152,9 @@
 
                                 <div class="row section-3-row">
                                     <div class="col ak-section-3-col-1">
-                                        <h5>Photos</h5>
+                                        <h5>Brands offered this seller</h5>
                                     </div>
-                                    <div class="col-12 ak-SIP-brand-section ">
+                                    <div class="col-12 ak-SIP-brand-section">
                                         <div class="wrapper">
                                             <i id="left" class="fa-solid fa-angle-left"></i>
                                             <ul class="carousel">
@@ -190,12 +182,7 @@
                                     </div>
                                 </div>
                     
-                                <div class="row ak-upload">
-                                    <div class="col-lg-4">
-                                        <input type="file" id="upload" hidden/>
-                                        <label class="ak-upload-btn d-flex" for="upload"><iconify-icon class="ak-upload-btn-icon" icon="line-md:uploading-loop"></iconify-icon><span>UPLOAD PHOTO</span></label>
-                                    </div>    
-                                </div>
+    
                                 <hr>
                                 
                                 <div class="row">
@@ -206,10 +193,10 @@
                                                 <a class="query-button" href="#divOne">Post your queries</a>
                                             </div>
                                             <div class="overlay" id="divOne">
-                                                <div class="wrapper">
+                                                <div class="wrapper ak-SIP-query-section">
                                                     <h2>State your query here</h2><a class="close" href="#">&times;</a>
                                                     <div class="content">
-                                                        <div class="container">
+                                                        <div class="container ak-SIP-Query-form">
                                                             <form class="ak-QA-form">
                                                                 <label>First Name</label>
                                                                 <input placeholder="Your name.." type="text">
@@ -246,13 +233,13 @@
                         <div class="tab">
                             <div class="row">
                                 <div class="col-lg-12 ak-SIP-offer-section">
-                                    <div class="ak-SIP-offer-section-strong">
+                                    <div class="ak-SIP-offer-section-strong draw">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <span>Exclusive Offers on Premium Deals</span>
+                                                <span><b>Exclusive Offers on Premium Deals</b></span>
                                             </div>
                                             <div class="col-lg-6 ak-SIP-offer-section-btn">
-                                                <a href=""><span>View Offers</span></a>
+                                                <button class="space-btn">View Offer</button>
                                             </div>
                                         </div>
                                     </div>
@@ -268,7 +255,7 @@
                                                     <span>Exclusive Offers on Premium Deals</span>
                                                 </div>
                                                 <div class="col-lg-6 ak-SIP-offer-section-btn">
-                                                    <a href=""><span>View Offers</span></a>
+                                                    <button class="space-btn">View Offer</button>
                                                 </div>
                                             </div>
 
@@ -293,7 +280,7 @@
                                                     <span>Exclusive Offers on Premium Deals</span>
                                                 </div>
                                                 <div class="col-lg-6 ak-SIP-offer-section-btn">
-                                                    <a href=""><span>View Offers</span></a>
+                                                    <button class="space-btn">View Offer</button>
                                                 </div>
                                             </div>
 
@@ -321,7 +308,7 @@
                                                     <span>Exclusive Offers on Premium Deals</span>
                                                 </div>
                                                 <div class="col-lg-6 ak-SIP-offer-section-btn">
-                                                    <a href=""><span>View Offers</span></a>
+                                                    <button class="space-btn">View Offer</button>
                                                 </div>
                                             </div>
 
@@ -346,7 +333,7 @@
                                                     <span>Exclusive Offers on Premium Deals</span>
                                                 </div>
                                                 <div class="col-lg-6 ak-SIP-offer-section-btn">
-                                                    <a href=""><span>View Offers</span></a>
+                                                    <button class="space-btn">View Offer</button>
                                                 </div>
                                             </div>
 
@@ -375,7 +362,7 @@
                                                     <span>Exclusive Offers on Premium Deals</span>
                                                 </div>
                                                 <div class="col-lg-6 ak-SIP-offer-section-btn">
-                                                    <a href=""><span>View Offers</span></a>
+                                                    <button class="space-btn">View Offer</button>
                                                 </div>
                                             </div>
 
@@ -400,7 +387,7 @@
                                                     <span>Exclusive Offers on Premium Deals</span>
                                                 </div>
                                                 <div class="col-lg-6 ak-SIP-offer-section-btn">
-                                                    <a href=""><span>View Offers</span></a>
+                                                    <button class="space-btn">View Offer</button>
                                                 </div>
                                             </div>
 
@@ -714,7 +701,38 @@
                         <input type="radio" id="tabphotos" name="mytabs">
                         <label for="tabphotos">Photos</label>
                         <div class="tab">
-                            
+                            <div class="container-fluid">
+                                <div class="row ak-SIP-photos-section-row">
+                                  <div class="column">
+                                    <img src="https://images.samsung.com/is/image/samsung/assets/us/home-appliances/bespoke/04172023/DA-BespokeKitchen-KV-BespokeMyLife-Thumbnail-DT.png?imwidth=1366" />
+                                    <img src="https://media.designcafe.com/wp-content/uploads/2023/06/18212540/appliances-for-modular-kitchen.jpg" />
+                                    <img src="https://5.imimg.com/data5/CY/TR/UG/SELLER-5856346/modular-kitchen.jpg" />
+                                    <img src="data:image/jpeg;base64,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" />
+                                    <img src="https://blog.woodenstreet.com/images/data/image_upload/1649488710small-kitchen-design-ideas-banner.png" />
+                                  </div>
+                                  <div class="column">
+                                    <img src="https://blog.woodenstreet.com/images/data/image_upload/1649488710small-kitchen-design-ideas-banner.png">
+                                    <img src="https://images.pexels.com/photos/4099350/pexels-photo-4099350.jpeg?cs=srgb&dl=pexels-taryn-elliott-4099350.jpg&fm=jpg">
+                                    <img src="https://mccoymart.com/post/wp-content/uploads/2018/11/smart-kitchen-appliances.jpg">
+                                    <img src="https://e0.pxfuel.com/wallpapers/147/460/desktop-wallpaper-ge-appliances-kitchen-inspiration-gallery-home-appliances-thumbnail.jpg">
+                                  </div>
+                                  <div class="column">
+                                    <img src="https://ak1.ostkcdn.com/wp-content/uploads/2019/03/32019-Top-10-Small-Appliances-Mixer.jpg" />
+                                    <img src="https://ak1.ostkcdn.com/wp-content/uploads/2019/03/32019-Top-10-Small-Appliances-Mixer.jpg" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe5UQYJkV3B_qrhvtjkz3odggrgHBXZdlPzQ&usqp=CAU">
+                                    <img src="https://dlifeinteriors.com/wp-content/uploads/2020/11/How-to-Build-Provision-for-Appliances-in-Kitchen-.jpg">
+                                    <img src="https://dlifeinteriors.com/wp-content/uploads/2020/11/How-to-Build-Provision-for-Appliances-in-Kitchen-.jpg">
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="row ak-upload">
+                                <div class="col-lg-4">
+                                    <input type="file" id="upload" hidden/>
+                                    <label class="ak-upload-btn d-flex" for="upload"><iconify-icon class="ak-upload-btn-icon" icon="line-md:uploading-loop"></iconify-icon><span>UPLOAD PHOTO</span></label>
+                                </div>    
+                            </div>
                         </div>
                     
                       </div>
@@ -829,8 +847,13 @@
 
 
 
-
-
+    <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="fas fa-arrow-up"></i>
+    </button>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
       <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
       <script src="script.js"></script>

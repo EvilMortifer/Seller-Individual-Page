@@ -9,18 +9,32 @@ body{
 }
 .mytabs input[type="radio"] {
     display: none;
+    
 }
 .mytabs label {
     padding: 25px;
-    background: #e2e2e2;
+    background-color: #f5bd09d7;
     font-weight: bold;
+    border-radius: 2px !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -ms-border-radius: 2px !important;
+    -o-border-radius: 2px !important;
 }
-.mytabs .tab {
+.mytabs label:hover{
+    background-color: #333;
+    color: #f4b803;
+    transition: 0.35s;
+}
+    
+.mytabs .tab
+{
     width: 100%;
     padding: 20px;
     background: #fff;
     order: 1;
     display: none;
+    
 }
 .mytabs .tab h2 {
     font-size: 3em;
@@ -51,7 +65,7 @@ body{
 
 .ak-container-1-basicInformation{
    padding: 30px !important;
-   background-color: rgba(251, 251, 251, 0.81);
+   background-color: rgb(246, 247, 248);
 }
 .ak-container-1-basicInformation:nth-of-type(2){
     background-color: rgb(246, 247, 248);
@@ -142,32 +156,28 @@ body{
     justify-content: end;
     padding-top: 3px !important;
     padding-left: 3px;
+    color:rgba(0, 0, 0, 0.8);
 }
-.ak-f-whatsapp{
-    color: rgb(7, 209, 78);
-}
-.ak-f-Add{
-    color: rgb(255, 115, 0);
+.ak-contact-number-chat a{
+    text-decoration: none !important;
 }
 .ak-f-Share{
    color: rgba(67, 70, 70, 0.963); 
+   
 }
 
-
 .ak-deal{
-    margin-top: 10px;
-    background-color: rgb(255, 187, 0);
+    background-color: #f4bd06;
     border: none;
-    border-radius: 3px;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 6px;
     font-weight: 500;
 }
 .ak-deal:hover{
-    background-color: rgb(67, 57, 31);
-    transition: 0.4s;
-    color: rgb(255, 255, 254);
+    background-color: #2a1f03;
+    color: #f4b803;
+    transition: 0.3s;
 }
-
 
 
 
@@ -214,7 +224,7 @@ body{
     width: 100%;
     position: relative;
   }
-  .wrapper i {
+  .ak-SIP-brand-section .wrapper i {
     top: 50%;
     height: 50px;
     width: 50px;
@@ -227,17 +237,18 @@ body{
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.23);
     transform: translateY(-50%);
+    z-index: 1;
   }
-  .wrapper i:active{
+  .ak-SIP-brand-section .wrapper i:active{
     transform: translateY(-50%) scale(0.85);
   }
-  .wrapper i:first-child{
+  .ak-SIP-brand-section .wrapper i:first-child{
     left: -22px;
   }
-  .wrapper i:last-child{
+  .ak-SIP-brand-section .wrapper i:last-child{
     right: -22px;
   }
-  .wrapper .carousel{
+  .ak-SIP-brand-section .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -248,26 +259,26 @@ body{
     scroll-behavior: smooth;
     scrollbar-width: none;
   }
-  .carousel::-webkit-scrollbar {
+  .ak-SIP-brand-section .carousel::-webkit-scrollbar {
     display: none;
   }
-  .carousel.no-transition {
+  .ak-SIP-brand-section .carousel.no-transition {
     scroll-behavior: auto;
   }
-  .carousel.dragging {
+  .ak-SIP-brand-section .carousel.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;
   }
-  .carousel.dragging .card {
+  .ak-SIP-brand-section .carousel.dragging .card {
     cursor: grab;
     user-select: none;
   }
-  .carousel :where(.card, .img) {
+  .ak-SIP-brand-section .carousel :where(.card, .img) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .carousel .card {
+  .ak-SIP-brand-section .carousel .card {
     scroll-snap-align: start;
     height: 242px;
     list-style: none;
@@ -277,35 +288,35 @@ body{
     flex-direction: column;
     border-radius: 8px;
   }
-  .carousel .card .img {
+  .ak-SIP-brand-section .carousel .card .img {
     height: 100%;
     width: 100%;
   }
-  .card .img img {
+  .ak-SIP-brand-section .card .img img {
     width: 100%;
     height: 100%;
     object-fit: fit;
   }
-  .card:hover{
+  .ak-SIP-brand-section .card:hover{
     transform: scale(0.9);
     transition: 0.3s;
   }
-  .carousel .card h2 {
+  .ak-SIP-brand-section .carousel .card h2 {
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
   }
-  .carousel .card span {
+  .ak-SIP-brand-section .carousel .card span {
     color: #6A6D78;
     font-size: 1.31rem;
   }
   @media screen and (max-width: 900px) {
-    .wrapper .carousel {
+    .ak-SIP-brand-section .wrapper .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);
     }
   }
   @media screen and (max-width: 600px) {
-    .wrapper .carousel {
+    .ak-SIP-brand-section .wrapper .carousel {
       grid-auto-columns: 100%;
     }
   }
@@ -386,7 +397,7 @@ body{
 	visibility: visible;
 	opacity: 1;
 }
-.wrapper {
+.ak-SIP-query-section {
 	margin: 70px auto;
 	padding: 20px;
 	background: #e7e7e7;
@@ -395,11 +406,11 @@ body{
 	position: relative;
 	transition: all 5s ease-in-out;
 }
-.wrapper h2 {
+.ak-SIP-query-section h2 {
 	margin-top: 0;
 	color: #333;
 }
-.wrapper .close {
+.ak-SIP-query-section .close {
 	position: absolute;
 	top: 20px;
 	right: 30px;
@@ -409,16 +420,18 @@ body{
 	text-decoration: none;
 	color: #333;
 }
-.wrapper .close:hover {
+.ak-SIP-query-section .close:hover {
 	color: #06D85F;
 }
-.wrapper .content {
+.ak-SIP-query-section .content {
 	max-height: 30%;
 	overflow: auto;
 }
 /*form*/
-
-.container {
+.ak-SIP-query-section h2{
+    font-size: 2rem !important;
+}
+.ak-SIP-Query-form .container {
 	border-radius: 5px;
 	background-color: #e7e7e7;
 	padding: 20px 0;
@@ -478,28 +491,239 @@ body{
 .ak-SIP-offer-section-btn{
     text-align: right;
 }
-.ak-SIP-offer-section-btn a{
-    font-size: 0.8rem ;
-    color: #ffb300;
+.ak-SIP-offer-section-btn a {
+    text-decoration:none;
+    color:#FFF;
+  }
+  
+  .space-btn {
+    position: relative;
+    font-family: "Electrolize", sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    line-height: 1;
+    color: #ee5c02;
+    margin: 0;
     padding: 10px;
-    text-decoration: none;
-    border: 3px solid #f57f01;
-    box-shadow:
-    inset 0 -3em 3em rgba(255, 196, 0, 0.178),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(253, 165, 3, 0.904);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .space-btn:hover {
+    color: #555042;
+  }
+  .space-btn:focus {
+    color: #2a1f03;
+    outline: none;
+  }
+  .space-btn:active {
+    color: #0c0901;
+  }
+  .space-btn:before, .space-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+  }
+  .space-btn:before {
+    top: 0;
+    left: 0;
+    box-shadow: inset 1px 1px 0 0 #f69205;
+  }
+  .space-btn:after {
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -1px -1px 0 0 #f69205;
+  }
+  
+  .space-btn:hover:before {
+    -webkit-animation: hoverShadowBefore 1s forwards;
+            animation: hoverShadowBefore 1s forwards;
+  }
+  .space-btn:hover:after {
+    -webkit-animation: hoverShadowAfter 1s forwards;
+            animation: hoverShadowAfter 1s forwards;
+  }
+  
+  @-webkit-keyframes hoverShadowBefore {
+    0% {
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: 0;
+    }
+    33% {
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    66% {
+      width: 1px;
+      height: 1px;
+      top: calc(100% - 1px);
+      left: 0;
+    }
+    100% {
+      width: 100%;
+      height: 1px;
+      top: calc(100% - 1px);
+      left: 0;
+    }
+  }
+  
+  @keyframes hoverShadowBefore {
+    0% {
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: 0;
+    }
+    33% {
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    66% {
+      width: 1px;
+      height: 1px;
+      top: calc(100% - 1px);
+      left: 0;
+    }
+    100% {
+      width: 100%;
+      height: 1px;
+      top: calc(100% - 1px);
+      left: 0;
+    }
+  }
+  @-webkit-keyframes hoverShadowAfter {
+    0% {
+      width: 100%;
+      height: 1px;
+    }
+    33% {
+      width: 1px;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+    66% {
+      width: 1px;
+      height: 1px;
+      bottom: calc(100% - 1px);
+      right: 0;
+    }
+    100% {
+      width: 100%;
+      height: 1px;
+      bottom: calc(100% - 1px);
+      right: 0;
+    }
+  }
+  @keyframes hoverShadowAfter {
+    0% {
+      width: 100%;
+      height: 1px;
+    }
+    33% {
+      width: 1px;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+    66% {
+      width: 1px;
+      height: 1px;
+      bottom: calc(100% - 1px);
+      right: 0;
+    }
+    100% {
+      width: 100%;
+      height: 1px;
+      bottom: calc(100% - 1px);
+      right: 0;
+    }
+  }
+
+
+
+.ak-SIP-offer-section-strong{
+    background: linear-gradient(140deg, rgba(246, 160, 1, 0.64) 0%, rgba(252,231,178,1) 44%, rgba(255,255,255,1) 100%);
+    border: none !important;
+    
 }
-.ak-SIP-offer-section-btn a:HOVER{
-    background-color: #080808;
-    color: #f4ac03;
-    transition: 0.4s;
-}
+.draw {
+    overflow: hidden;
+    position: relative;
+  }
+  .draw::before, .draw::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    border: 6px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  .draw::before {
+    top: 0;
+    left: 0;
+    border-top-color: #f49506;
+    border-right-color: #f5b505;
+    animation: border 2s infinite;
+  }
+  .draw::after {
+    bottom: 0;
+    right: 0;
+    animation: border 2s 1s infinite, borderColor 2s 1s infinite;
+  }
+  
+  @keyframes border {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    25% {
+      width: 100%;
+      height: 0;
+    }
+    50% {
+      width: 100%;
+      height: 100%;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @keyframes borderColor {
+    0% {
+      border-bottom-color: #f49506;
+      border-left-color: #f5b505;
+    }
+    50% {
+      border-bottom-color: #f49506;
+      border-left-color: #f5b505;
+    }
+    51% {
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    100% {
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+  }
 
 .ak-SIP-offer-section-2{
     padding: 10px;
+    
 }
 .ak-SIP-offer-section-strong-2{
-    background-color: transparent;
     border: 2px solid #f49803;
     border-radius: 5px;
     padding: 20px 30px;
@@ -782,11 +1006,60 @@ width:attr(data-percent,%,0);
 
 }
 
+/*back to top*/
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 100%;
+    display: none;
+}
 
-
-
-
-
+.ak-SIP-photos-section-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(0.2) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    -webkit-filter: grayscale(0.2) brightness(0.5);
+}
+  .column img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  
 
 
 
@@ -816,7 +1089,9 @@ width:attr(data-percent,%,0);
         align-items: start !important;
         text-align: left;
     }
-    
+    .mytabs label {
+        padding: 12px;
+    }
 }
 
 @media only screen and (max-width: 380px){
